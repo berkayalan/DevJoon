@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "982381319852",
+    "firebase_url": "https://devjoon-683f3.firebaseio.com",
+    "project_id": "devjoon-683f3",
+    "storage_bucket": "devjoon-683f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982381319852:android:d7da2a25fae8944b35b109",
+        "android_client_info": {
+          "package_name": "world.devjoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982381319852-ksheecofm4fbqs3dhc3rlurupf5lqcau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2IUm1N323W5zNedu51IyIK8pAEPStbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982381319852-ksheecofm4fbqs3dhc3rlurupf5lqcau.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "982381319852-ffi6i0bhkrc8ci07etvghi48erhqm8e1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "world.devjoon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

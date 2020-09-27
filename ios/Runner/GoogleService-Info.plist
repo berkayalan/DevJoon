@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>982381319852-ffi6i0bhkrc8ci07etvghi48erhqm8e1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.982381319852-ffi6i0bhkrc8ci07etvghi48erhqm8e1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCbqAJJYuMUiKqu1diN1mJVYIu0i6-bCvc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>982381319852</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>world.devjoon</string>
+	<key>PROJECT_ID</key>
+	<string>devjoon-683f3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>devjoon-683f3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:982381319852:ios:85c0e4d0b15acbf335b109</string>
+	<key>DATABASE_URL</key>
+	<string>https://devjoon-683f3.firebaseio.com</string>
+</dict>
+</plist>
