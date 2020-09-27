@@ -24,46 +24,52 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('DevJoon'),
           ),
-          body: Center(child: Padding(
-            padding: const EdgeInsets.all(32),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [                  Text("Pick the application"),
-              SizedBox(height: 16,),
-                    MaterialButton(
-                      minWidth: double.infinity,
-                      color: Theme.of(context).primaryColor,
-                      textColor: Colors.white,
-                      child: Text(
-                        'Handcraft Application',
-                      ),
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HandcraftPage(),
-                        ),
+          body: Builder(builder: (context) {
+            return Center(
+                child: Padding(
+              padding: const EdgeInsets.all(32),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Pick the application"),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  MaterialButton(
+                    minWidth: double.infinity,
+                    color: Theme.of(context).primaryColor,
+                    textColor: Colors.white,
+                    child: Text(
+                      'Handcraft Application',
+                    ),
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HandcraftPage(),
                       ),
                     ),
-                                SizedBox(height: 16,),
-                                        MaterialButton(
-                                                              minWidth: double.infinity,
-
-                      color: Theme.of(context).primaryColor,
-                      textColor: Colors.white,
-                      child: Text(
-                        'Desginer Application',
-                      ),
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => DesignerPage(),
-                        ),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  MaterialButton(
+                    minWidth: double.infinity,
+                    color: Theme.of(context).primaryColor,
+                    textColor: Colors.white,
+                    child: Text(
+                      'Desginer Application',
+                    ),
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DesignerPage(),
                       ),
                     ),
-
-              ],
-            ),
-          ))),
+                  ),
+                ],
+              ),
+            ));
+          })),
     );
   }
 }
