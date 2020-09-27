@@ -1,6 +1,12 @@
+import 'package:devjoon/designer_page.dart';
+import 'package:devjoon/handcraft_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(MyApp());
 }
 
@@ -14,72 +20,50 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'DevJoon'),
-    );
-  }
-}
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('DevJoon'),
+          ),
+          body: Center(child: Padding(
+            padding: const EdgeInsets.all(32),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [                  Text("Pick the application"),
+              SizedBox(height: 16,),
+                    MaterialButton(
+                      minWidth: double.infinity,
+                      color: Theme.of(context).primaryColor,
+                      textColor: Colors.white,
+                      child: Text(
+                        'Handcraft Application',
+                      ),
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HandcraftPage(),
+                        ),
+                      ),
+                    ),
+                                SizedBox(height: 16,),
+                                        MaterialButton(
+                                                              minWidth: double.infinity,
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+                      color: Theme.of(context).primaryColor,
+                      textColor: Colors.white,
+                      child: Text(
+                        'Desginer Application',
+                      ),
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DesignerPage(),
+                        ),
+                      ),
+                    ),
 
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    String code = '5454';
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children:[ 
-              Text("Code:"+code),
-                            MaterialButton(
-                color: Theme.of(context).primaryColor,
-                child: Text(
-                  'About Me',
-                ),
-                onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyHomePage(title:'pageTwo'),
-                  ),
-                ),
-              ),]),
-      
-            Text(
-              'You have pushed the button this many times:',
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
+          ))),
     );
   }
 }
