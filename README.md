@@ -1,16 +1,4 @@
 # devjoon
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Joon is a capacity development platform for producer groups with limited income resources. We are aiming to facilitate the socio-economic participation of people such as women, people with disabilities and immigrants, who cannot sustain their livelihood because of external reasons.
+In this project it is aimed to solve the problems of both designers and beneficiaries. In order to solve, a new mobile app is designed. This project is designed for Innovation Hackathon between 25-27 September
